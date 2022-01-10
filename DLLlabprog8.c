@@ -9,7 +9,7 @@ f. Exit*/
 
 #include <stdio.h>
 #include <stdlib.h>
-#include <process.h>
+#include <process.h>//comment this line if some error shown in the console 
 #include <conio.h>
 
 struct node
