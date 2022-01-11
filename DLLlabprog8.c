@@ -9,7 +9,7 @@ f. Exit*/
 
 #include <stdio.h>
 #include <stdlib.h>
-#include <process.h>//comment this line if some error shown in the console 
+// #include <process.h>//comment this line if some error shown in the console 
 #include <conio.h>
 
 struct node
@@ -42,7 +42,7 @@ element getnode()
 	printf("\n DESIGNATION : ");
 	scanf("%s",x->dsgn);
 	printf("\n SALARY : ");
-	scanf("%ld",&x->sal);
+	scanf("%lf",&x->sal);
 	printf("\n PHONE NUMBER : ");
 	scanf("%llu",&x->phno);
 	x->llink = x->rlink = NULL;
@@ -93,7 +93,7 @@ element deletefront(element first)
 	}
 	cur=first;
 	first=first->rlink;
-	printf("\n The deleted node is : [%d , %s , %s , %s , %ld , ",cur->ssn,cur->name,cur->dept,cur->dsgn,cur->sal);
+	printf("\n The deleted node is : [%d , %s , %s , %s , %lf , ",cur->ssn,cur->name,cur->dept,cur->dsgn,cur->sal);
 	printf(" %llu ] -> ",cur->phno);
 	free(cur);
 	return first;
@@ -117,7 +117,7 @@ element deleteend(element first)
 	  	prev->rlink=NULL;
 	else
 		first=NULL;
-	printf("\n The deleted node is : [%d , %s , %s , %s , %ld , ",cur->ssn,cur->name,cur->dept,cur->dsgn,cur->sal);
+	printf("\n The deleted node is : [%d , %s , %s , %s , %lf , ",cur->ssn,cur->name,cur->dept,cur->dsgn,cur->sal);
 	printf(" %llu ] -> ",cur->phno);
 	free(cur);
 	return first;
@@ -139,7 +139,7 @@ void display(element first)
 	printf("\n START -> ");
 	for(temp=first;temp!=NULL;temp=temp->rlink)
 	{
-		printf("[%d , %s , %s , %s , %ld , ",temp->ssn,temp->name,temp->dept,temp->dsgn,temp->sal);
+		printf("[%d , %s , %s , %s , %lf , ",temp->ssn,temp->name,temp->dept,temp->dsgn,temp->sal);
 		printf(" %llu ] -> ",temp->phno);
 		count++;
 	}
