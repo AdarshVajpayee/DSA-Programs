@@ -2,7 +2,7 @@
 (a.)Create a SLL of N students data by using front insertion.  
 (b.)Display the status of the SLL and count the number of nodes in it.
 (c.)Perform insertion and deletion operations at End of the SLL.
-(d.)Perform insertion and deletion operations at from of the SLL.
+(d.)Perform insertion and deletion operations at front of the SLL.
 (e.)Demonstrate how this SLL can be used as STACK and QUEUE.
 (f.)EXIT.
 */
