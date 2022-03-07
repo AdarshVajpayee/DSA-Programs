@@ -13,11 +13,11 @@ void bfs(int src)
 {
     int i,j,q[20],f=0,r=-1;
     q[++r]=src;
-    while(f<=r && r<n)
+    while(f<=r)
     {
         i=q[f++];
         printf("%d ",i);
-        for(j=0;j<n;j++)
+        for(j=0;j<n-1;j++)
         {
             if(a[i][j]&&!vbfs[j])
             {
