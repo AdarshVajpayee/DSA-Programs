@@ -1,4 +1,4 @@
-//program to write n integers into a  file.
+//program to write n integers into a binary file.
 
 #include<stdio.h>
 #include<stdlib.h>
