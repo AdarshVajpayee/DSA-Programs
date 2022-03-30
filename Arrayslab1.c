@@ -4,7 +4,7 @@
     3.Inserting an element at the given valid position
     4.Deleting an elements at the given valid position
     5.exit */
-// Author : Example
+
 #include <stdio.h>
 #include <stdlib.h>
 
